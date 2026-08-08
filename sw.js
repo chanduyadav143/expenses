@@ -1,4 +1,4 @@
-const CACHE = 'expense-calc-v1';
+const CACHE = 'expense-calc-v2';
 const FILES = [
   './expense-calculator.html',
   './manifest.json',
