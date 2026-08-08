@@ -814,9 +814,7 @@ function quickSaveExpenses() {
 function syncExpenseCategories() {
   const names = Array.from(document.querySelectorAll('#expense-list .exp-name'))
     .map(el => el.value.trim()).filter(Boolean);
-  names.forEach(n => {
-    if (!userData.expenseCategories.includes(n)) userData.expenseCategories.push(n);
-  });
+  userData.expenseCategories = names;
 }
 
 document.getElementById('save-btn').addEventListener('click', () => {
